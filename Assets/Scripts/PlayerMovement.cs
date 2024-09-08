@@ -6,16 +6,27 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float playerJumpSpeed = 6f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private float pushPower = 2f;
+
     private Rigidbody2D playerBody;
     private Animator animator;
     private BoxCollider2D boxCollider;
+    
+
     private float wallJumpCooldown;
     private float horizontalInput;
+
+
+    private GameObject boxObject;
     private void Awake()
     {
         playerBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+      
+
+        playerBody.constraints = RigidbodyConstraints2D.FreezeRotation;
+        
     }
 
     private void Update()
@@ -54,6 +65,12 @@ public class PlayerMovement : MonoBehaviour
                 Jump();
         }
         else wallJumpCooldown += Time.deltaTime;
+
+        if (boxObject != null)
+        {
+            Rigidbody2D boxRigidbody = boxObject.GetComponent<Rigidbody2D>();
+            boxRigidbody.velocity = new Vector2(horizontalInput * pushPower, boxRigidbody.velocity.y);
+        }
     }
     private void Jump() 
     {
@@ -71,10 +88,7 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-    }
+    
 
     private bool isGrounded()
     {
@@ -88,5 +102,21 @@ public class PlayerMovement : MonoBehaviour
             new Vector2(transform.localScale.x,0), 0.1f, wallLayer);
 
         return raycastHit.collider != null;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            boxObject = collision.gameObject; // Player is touching the box
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            boxObject = null; // Player is no longer touching the box
+        }
     }
 }
