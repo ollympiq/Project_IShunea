@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float playerJumpSpeed = 6f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
+    
     [SerializeField] private float pushPower = 2f;
 
     private Rigidbody2D playerBody;
@@ -48,15 +49,15 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("grounded", isGrounded());
 
         //wall jump
-        if (wallJumpCooldown > 0.2f)
+        if (wallJumpCooldown > 0.3f)
         {
             
             playerBody.velocity = new Vector2(horizontalInput * playerSpeed, playerBody.velocity.y);
-
-            if (onWall() && !isGrounded())
+            
+                if (onWall() && !isGrounded() && horizontalInput != 0)
             {
-                playerBody.gravityScale = 0;
-                playerBody.velocity = Vector2.zero;
+                playerBody.gravityScale = 0.5f; 
+                playerBody.velocity = new Vector2(playerBody.velocity.x, -4f);
             }
             else
                 playerBody.gravityScale = 1;
@@ -80,11 +81,13 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (onWall() && !isGrounded())
         {
-            
-            playerBody.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 3, 3);
+
+            playerBody.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 2, 3);
             wallJumpCooldown = 0;
-           
+
         }
+       
+       
         
     }
 
@@ -104,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
         return raycastHit.collider != null;
     }
 
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Box"))
