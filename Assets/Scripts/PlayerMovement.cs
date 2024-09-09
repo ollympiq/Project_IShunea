@@ -33,15 +33,15 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
          horizontalInput = Input.GetAxis("Horizontal");
-        
+
 
         //flip
-        if(horizontalInput > 0.01f)
-            transform.localScale = Vector3.one;
+        if (horizontalInput > 0.01f)
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         else if (horizontalInput < -0.01f)
-            transform.localScale = new Vector3 (-1,1,1);
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 
-        
+
 
         //set animator parameter
 
