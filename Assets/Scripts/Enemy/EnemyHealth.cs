@@ -31,7 +31,7 @@ public class EnemyHealth : MonoBehaviour
     {
 
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
-
+        Debug.Log("Enemy HP: " + currentHealth);
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
@@ -42,7 +42,11 @@ public class EnemyHealth : MonoBehaviour
             if (!dead)
             {
                 anim.SetTrigger("die");
-                GetComponent<PlayerMovement>().enabled = false;
+                if(GetComponentInParent<EnemyPatrol>()!=null)
+                    GetComponentInParent<EnemyPatrol>().enabled = false;
+
+                if (GetComponent<MeleeEnemy>() != null)
+                    GetComponent<MeleeEnemy>().enabled = false;
                 dead = true;
        
             }
@@ -62,5 +66,10 @@ public class EnemyHealth : MonoBehaviour
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
         Physics2D.IgnoreLayerCollision(10, 11, false);
+    }
+
+    private void DeActivate() 
+    {
+    gameObject.SetActive(false);
     }
 }

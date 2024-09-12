@@ -46,7 +46,7 @@ public class FireTrap : MonoBehaviour
     {
         if (activated && player != null)
         {
-            // Only apply damage if the cooldown has passed
+            
             if (Time.time >= lastDamageTime + damageCooldown)
             {
                 player.TakeDamage(damage);
