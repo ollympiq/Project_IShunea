@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float damage;
     [SerializeField] private float movementDistance;
     [SerializeField] private float speed;
-
+    private Health player;
     private bool movingLeft;
     private float leftEdge;
     private float rightEdge;
@@ -47,6 +47,13 @@ public class Enemy : MonoBehaviour
     {
         if (collision.tag == "Player") {
             collision.GetComponent<Health>().TakeDamage(damage);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            player = null;
         }
     }
 }

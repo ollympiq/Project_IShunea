@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float playerJumpSpeed = 6f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
-
+    [SerializeField] private AudioClip attackSound;
     [SerializeField] private float pushPower = 2f;
     
     private Rigidbody2D playerBody;
@@ -97,12 +97,14 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (attackCooldown > 1f)
+        if (attackCooldown > 0.8f)
         {
             if (Input.GetMouseButtonDown(0))
             {
+                
                 animator.SetTrigger("attacking");
-                attackCooldown = 0;  
+                attackCooldown = 0;
+                
             }
         }
         else
@@ -153,6 +155,13 @@ public class PlayerMovement : MonoBehaviour
             boxObject = collision.gameObject;
         }
     }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            boxObject = null; 
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -187,6 +196,11 @@ public class PlayerMovement : MonoBehaviour
     public void DisableHitbox()
     {
         attackHitbox.enabled = false;
+    }
+
+    public void SoundPLay() 
+    {
+        SoundManager.instance.PlaySound(attackSound);
     }
 
     

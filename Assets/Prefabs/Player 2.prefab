@@ -203,6 +203,7 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
+  attackSound: {fileID: 8300000, guid: 88b1cbe3caa3fee4b8b103b5edd7aba9, type: 3}
   pushPower: 3
   attackHitbox: {fileID: 3869434815475075449}
 --- !u!114 &7054354392685852928
@@ -217,11 +218,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96ac91243a4ecf4ba2d5385ffeaeb5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 99
+  startingHealth: 5
   delayBeforeSceneChange: 2
   deathMessageText: {fileID: 0}
-  iFramesDuration: 2
-  numberOfFlashes: 2
+  iFramesDuration: 1
+  numberOfFlashes: 1
 --- !u!1 &7180595919774415305
 GameObject:
   m_ObjectHideFlags: 0

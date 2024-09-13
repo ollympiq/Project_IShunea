@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Spikehead : EnemyDamage
 {
@@ -6,6 +7,7 @@ public class Spikehead : EnemyDamage
     [SerializeField] private float speed;
     [SerializeField] private float range;
     [SerializeField] private float checkDelay;
+    [SerializeField] private float stopDelay;
     [SerializeField] private LayerMask playerLayer;
     private Vector3[] directions = new Vector3[4];
     private Vector3 destination;
@@ -16,9 +18,9 @@ public class Spikehead : EnemyDamage
     {
         Stop();
     }
+
     private void Update()
     {
-        
         if (attacking)
             transform.Translate(destination * Time.deltaTime * speed);
         else
@@ -28,11 +30,11 @@ public class Spikehead : EnemyDamage
                 CheckForPlayer();
         }
     }
+
     private void CheckForPlayer()
     {
         CalculateDirections();
 
-        
         for (int i = 0; i < directions.Length; i++)
         {
             Debug.DrawRay(transform.position, directions[i], Color.red);
@@ -43,25 +45,36 @@ public class Spikehead : EnemyDamage
                 attacking = true;
                 destination = directions[i];
                 checkTimer = 0;
+
+                // Start the coroutine to stop after a delay
+                StartCoroutine(StopAfterDelay());
             }
         }
     }
+
     private void CalculateDirections()
     {
-        directions[0] = transform.right * range; 
-        directions[1] = -transform.right * range; 
-        directions[2] = transform.up * range; 
-        directions[3] = -transform.up * range; 
+        directions[0] = transform.right * range;
+        directions[1] = -transform.right * range;
+        directions[2] = transform.up * range;
+        directions[3] = -transform.up * range;
     }
+
     private void Stop()
     {
-        destination = transform.position; 
+        destination = Vector3.zero; 
         attacking = false;
+    }
+
+    private IEnumerator StopAfterDelay()
+    {
+        yield return new WaitForSeconds(stopDelay);
+        Stop();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
-        Stop(); 
+        Stop();
     }
 }

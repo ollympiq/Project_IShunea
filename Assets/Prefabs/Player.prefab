@@ -181,7 +181,8 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
-  pushPower: 1
+  pushPower: 3
+  attackHitbox: {fileID: 0}
 --- !u!95 &8009956644196559278
 Animator:
   serializedVersion: 5
