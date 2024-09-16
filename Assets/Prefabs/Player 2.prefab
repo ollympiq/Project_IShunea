@@ -204,6 +204,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attackSound: {fileID: 8300000, guid: 88b1cbe3caa3fee4b8b103b5edd7aba9, type: 3}
+  jumpSound: {fileID: 8300000, guid: 4e349dc959014a845b9aa317d1c2b7f0, type: 3}
   pushPower: 3
   attackHitbox: {fileID: 3869434815475075449}
 --- !u!114 &7054354392685852928
@@ -223,6 +224,8 @@ MonoBehaviour:
   deathMessageText: {fileID: 0}
   iFramesDuration: 1
   numberOfFlashes: 1
+  hitSound: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
+  deathSound: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
 --- !u!1 &7180595919774415305
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private AudioClip attackSound;
+    [SerializeField] private AudioClip jumpSound;
     [SerializeField] private float pushPower = 2f;
     
     private Rigidbody2D playerBody;
@@ -73,8 +74,15 @@ public class PlayerMovement : MonoBehaviour
             else
                 playerBody.gravityScale = 1;
 
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space)) 
+            { 
                 Jump();
+                if (Input.GetKeyDown(KeyCode.Space)&& isGrounded() || onWall()) 
+                {
+                    SoundManager.instance.PlaySound(jumpSound);
+                }
+            }
+                
         }
         else wallJumpCooldown += Time.deltaTime;
 
@@ -97,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (attackCooldown > 0.8f)
+        if (attackCooldown > 1f)
         {
             if (Input.GetMouseButtonDown(0))
             {

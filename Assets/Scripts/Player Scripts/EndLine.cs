@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class EndLine : MonoBehaviour
 {
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "Player")
-    //    {
-    //        SceneManager.LoadSceneAsync(2);
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Flag")
+        {
+            SceneManager.LoadSceneAsync(2);
+        }
+    }
 }

@@ -17,6 +17,9 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
+
+    [SerializeField] private AudioClip hitSound;
+    [SerializeField] private AudioClip deathSound;
     private SpriteRenderer spriteRend;
 
 
@@ -35,6 +38,7 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
+            SoundManager.instance.PlaySound(hitSound);
             StartCoroutine(Invulnerability());
         }
         else
@@ -42,7 +46,8 @@ public class EnemyHealth : MonoBehaviour
             if (!dead)
             {
                 anim.SetTrigger("die");
-                if(GetComponentInParent<EnemyPatrol>()!=null)
+                SoundManager.instance.PlaySound(deathSound);
+                if (GetComponentInParent<EnemyPatrol>()!=null)
                     GetComponentInParent<EnemyPatrol>().enabled = false;
 
                 if (GetComponent<MeleeEnemy>() != null)

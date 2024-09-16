@@ -21,7 +21,8 @@ public class Health : MonoBehaviour
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
-
+    [SerializeField] private AudioClip hitSound;
+    [SerializeField] private AudioClip deathSound;
 
     private void Awake()
     {
@@ -38,16 +39,20 @@ public class Health : MonoBehaviour
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
+            SoundManager.instance.PlaySound(hitSound);
             StartCoroutine(Invulnerability());
         }
         else {
             if (!dead) {
                 anim.SetTrigger("die");
+                SoundManager.instance.PlaySound(deathSound);
                 GetComponent<PlayerMovement>().enabled = false;
                 dead = true;
                 deathMessageText.text = "YOU DIED";
                 deathMessageText.gameObject.SetActive(true);
+                
                 StartCoroutine(ChangeSceneAfterDelay());
+                
             }
         }
     }
@@ -56,11 +61,13 @@ public class Health : MonoBehaviour
     {
       
         yield return new WaitForSeconds(delayBeforeSceneChange);
-
+        
         
         SceneManager.LoadScene(0);
     }
+    
 
+     
     private IEnumerator Invulnerability() {
         Physics2D.IgnoreLayerCollision(10,11,true);
         for (int i = 0; i < numberOfFlashes; i++) {

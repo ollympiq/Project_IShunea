@@ -166,9 +166,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f0320da8178974ebbf258dcc400893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 20
+  startingHealth: 5
   iFramesDuration: 3
   numberOfFlashes: 1
+  hitSound: {fileID: 8300000, guid: 235748a8303a08741b8656ae80caf988, type: 3}
+  deathSound: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
 --- !u!114 &8048707754045512574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +191,8 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+  attackSound: {fileID: 8300000, guid: 21c4a490b24ba2045bc815f7626a40ef, type: 3}
+  attackSound2: {fileID: 8300000, guid: 56703418e3aed4c47a5f6622816b8e41, type: 3}
 --- !u!1001 &2619277099422827419
 PrefabInstance:
   m_ObjectHideFlags: 0
