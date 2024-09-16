@@ -221,7 +221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 5
   delayBeforeSceneChange: 2
-  deathMessageText: {fileID: 0}
+  gameOverScreen: {fileID: 0}
+  gameOverSound: {fileID: 8300000, guid: 7cc057bed53baf34799f52aab3c84800, type: 3}
   iFramesDuration: 1
   numberOfFlashes: 1
   hitSound: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}

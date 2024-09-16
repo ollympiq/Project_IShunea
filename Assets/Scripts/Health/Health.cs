@@ -14,7 +14,8 @@ public class Health : MonoBehaviour
     private bool dead;
     [SerializeField] private float delayBeforeSceneChange = 2f;
 
-    [SerializeField] private TextMeshProUGUI deathMessageText;
+    [SerializeField] private GameObject gameOverScreen;
+    [SerializeField] private AudioClip gameOverSound;
 
     [Header("iFrames")]
 
@@ -26,7 +27,7 @@ public class Health : MonoBehaviour
 
     private void Awake()
     {
-        deathMessageText.gameObject.SetActive(false);
+        
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();    
@@ -46,25 +47,20 @@ public class Health : MonoBehaviour
             if (!dead) {
                 anim.SetTrigger("die");
                 SoundManager.instance.PlaySound(deathSound);
+
+                gameOverScreen.SetActive(true);
+                SoundManager.instance.PlaySound(gameOverSound);
                 GetComponent<PlayerMovement>().enabled = false;
                 dead = true;
-                deathMessageText.text = "YOU DIED";
-                deathMessageText.gameObject.SetActive(true);
+              
                 
-                StartCoroutine(ChangeSceneAfterDelay());
+               
                 
             }
         }
     }
 
-    IEnumerator ChangeSceneAfterDelay()
-    {
-      
-        yield return new WaitForSeconds(delayBeforeSceneChange);
-        
-        
-        SceneManager.LoadScene(0);
-    }
+   
     
 
      
