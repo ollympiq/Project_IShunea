@@ -2,12 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [Header("Health")]
 
+    public GameObject healthBarCanvas;
     [SerializeField] private float startingHealth;
     private Animator anim;
     public float currentHealth { get; private set; }
@@ -21,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private AudioClip hitSound;
     [SerializeField] private AudioClip deathSound;
     private SpriteRenderer spriteRend;
-
+    
 
     private void Awake()
     {
@@ -29,10 +30,23 @@ public class EnemyHealth : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
     }
-
+    public float GetStartingHealth()
+    {
+        return startingHealth;
+    }
     public void TakeDamage(float _damage)
     {
+        Debug.Log("TakeDamage called with damage: " + _damage);
+        if (!healthBarCanvas.activeSelf)
+            healthBarCanvas.SetActive(true);
 
+        
+
+        if (currentHealth <= 0)
+        {
+            healthBarCanvas.SetActive(false);
+            
+        }
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
         Debug.Log("Enemy HP: " + currentHealth);
         if (currentHealth > 0)
@@ -56,6 +70,8 @@ public class EnemyHealth : MonoBehaviour
        
             }
         }
+
+
     }
 
    

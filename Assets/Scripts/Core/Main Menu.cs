@@ -12,4 +12,13 @@ public class MainMenu : MonoBehaviour
     public void QuitGame() {
      Application.Quit();
     }
+
+    public void soundVolume()
+    {
+        SoundManager.instance.ChangeSoundVolume(0.2f);
+    }
+    public void musicVolume()
+    {
+        SoundManager.instance.ChangeMusicVolume(0.2f);
+    }
 }

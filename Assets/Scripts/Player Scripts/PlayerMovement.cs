@@ -183,7 +183,8 @@ public class PlayerMovement : MonoBehaviour
             EnemyHealth enemyHealth = collision.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(1);  
+                enemyHealth.TakeDamage(1);
+                DisableHitbox();
             }
         }
     }

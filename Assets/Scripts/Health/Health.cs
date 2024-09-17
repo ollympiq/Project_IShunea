@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
     private Animator anim;
     public float currentHealth { get; private set; }
     private bool dead;
-    [SerializeField] private float delayBeforeSceneChange = 2f;
+
 
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private AudioClip gameOverSound;

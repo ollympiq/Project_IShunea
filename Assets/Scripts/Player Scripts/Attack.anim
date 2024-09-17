@@ -114,15 +114,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.7
-    functionName: SoundPLay
+  - time: 0.4
+    functionName: DisableHitbox
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.9
-    functionName: DisableHitbox
+  - time: 0.7
+    functionName: SoundPLay
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
