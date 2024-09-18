@@ -207,6 +207,8 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 4e349dc959014a845b9aa317d1c2b7f0, type: 3}
   pushPower: 3
   attackHitbox: {fileID: 3869434815475075449}
+  inventory: {fileID: 0}
+  flagPrefab: {fileID: 2603779237416683434, guid: d412f327a583fcb4292cb2a9e46230b5, type: 3}
 --- !u!114 &7054354392685852928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 5
-  delayBeforeSceneChange: 2
   gameOverScreen: {fileID: 0}
   gameOverSound: {fileID: 8300000, guid: 7cc057bed53baf34799f52aab3c84800, type: 3}
   iFramesDuration: 1

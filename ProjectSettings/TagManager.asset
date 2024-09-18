@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - Flag
   - Traps
+  - Chest
+  - Key
   layers:
   - Default
   - TransparentFX

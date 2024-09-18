@@ -1,15 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EndLine : MonoBehaviour
 {
+    [SerializeField] private Inventory inventory;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Flag")
+        if (inventory != null && inventory.HasItem("Flag"))
         {
-            SceneManager.LoadSceneAsync(2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex );
         }
     }
 }

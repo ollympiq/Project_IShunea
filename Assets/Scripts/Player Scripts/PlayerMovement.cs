@@ -20,15 +20,17 @@ public class PlayerMovement : MonoBehaviour
 
     private GameObject boxObject;
     
-
-    private GameObject flagObject; 
     private bool isHoldingFlag = false;
 
 
     [SerializeField] private BoxCollider2D attackHitbox;
+    [SerializeField] private Inventory inventory; 
 
-
-    
+    private GameObject keyObject;
+    private GameObject chestObject;
+    private GameObject flagObject;
+    [SerializeField] private GameObject flagPrefab;
+    [SerializeField] private float dropUpForce = 5f;
     private void Awake()
     {
         playerBody = GetComponent<Rigidbody2D>();
@@ -91,17 +93,32 @@ public class PlayerMovement : MonoBehaviour
             Rigidbody2D boxRigidbody = boxObject.GetComponent<Rigidbody2D>();
             boxRigidbody.velocity = new Vector2(horizontalInput * pushPower, boxRigidbody.velocity.y);
         }
+
+        if (keyObject != null && Input.GetKeyDown(KeyCode.E))
+        {
+            if (inventory.AddItem(keyObject))
+            {
+                Debug.Log("Key picked up!");
+                Destroy(keyObject); 
+                keyObject = null; 
+            }
+        }
         if (flagObject != null && Input.GetKeyDown(KeyCode.E))
         {
-            isHoldingFlag = !isHoldingFlag;
-            if (isHoldingFlag)
+            if (inventory.AddItem(flagObject))
             {
-                flagObject.transform.SetParent(this.transform); 
-                flagObject.transform.localPosition = new Vector3(1f, 0.5f, 0); 
+                Debug.Log("Flag picked up!");
+                flagObject = null; 
             }
-            else
+        }
+
+        
+        if (chestObject != null && Input.GetKeyDown(KeyCode.E))
+        {
+            if (inventory.HasItem("Key")) 
             {
-                flagObject.transform.SetParent(null); 
+                OpenChest();
+                inventory.RemoveItem("Key"); 
             }
         }
 
@@ -173,9 +190,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Flag"))
+        if (collision.CompareTag("Key"))
+        {
+            keyObject = collision.gameObject;
+        }
+
+        if (collision.CompareTag("Flag"))
         {
             flagObject = collision.gameObject;
+        }
+
+        if (collision.CompareTag("Chest"))
+        {
+            chestObject = collision.gameObject;
         }
 
         if (attackHitbox.enabled && collision.CompareTag("Enemy"))
@@ -191,9 +218,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Flag"))
+        if (collision.CompareTag("Key"))
+        {
+            keyObject = null;
+        }
+        if (collision.CompareTag("Flag"))
         {
             flagObject = null;
+        }
+
+        if (collision.CompareTag("Chest"))
+        {
+            chestObject = null;
         }
     }
 
@@ -212,5 +248,35 @@ public class PlayerMovement : MonoBehaviour
         SoundManager.instance.PlaySound(attackSound);
     }
 
-    
+    private void OpenChest()
+    {
+        
+        Animator chestAnimator = chestObject.GetComponent<Animator>();
+        if (chestAnimator != null)
+        {
+            chestAnimator.SetTrigger("Open");
+        }
+
+        
+        if (flagPrefab != null)
+        {
+            GameObject flagInstance = Instantiate(flagPrefab, chestObject.transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+            flagInstance.SetActive(true); 
+
+            
+            Rigidbody2D flagRigidbody = flagInstance.GetComponent<Rigidbody2D>();
+            if (flagRigidbody != null)
+            {
+                flagRigidbody.AddForce(new Vector2(0, dropUpForce), ForceMode2D.Impulse); 
+            }
+            else
+            {
+                Debug.LogError("Flag prefab does not have a Rigidbody2D component!");
+            }
+        }
+        else
+        {
+            Debug.LogError("Flag prefab is not assigned in the Inspector!");
+        }
+    }
 }
