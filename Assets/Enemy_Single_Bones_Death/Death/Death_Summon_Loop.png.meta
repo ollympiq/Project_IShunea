@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -147,7 +147,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Death_Summon_Loop_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 91
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412f55226fdb7aa4cabd543c9744e23b
+      internalID: 868909271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Summon_Loop_1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 90
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b458acfc0eef14d9b825fd91fcf12f
+      internalID: 1837520787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Summon_Loop_2
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 89
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df197dff752c56e47b08bf99132d80b7
+      internalID: -1358462020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Summon_Loop_3
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 88
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9e19312d621904c8b62fbe8af228bb
+      internalID: -821520905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Summon_Loop_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 7
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a16fc96a3ed7a4ea28f785cf857cf0
+      internalID: 898326587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Summon_Loop_5
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 10
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b87550547c9a5e479df9c4055fc323d
+      internalID: 278609227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Summon_Loop_6
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 11
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcca4d8e8c6c4f4aa8e70b4696d467f
+      internalID: 1780383998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,7 +305,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Death_Summon_Loop_0: 868909271
+      Death_Summon_Loop_1: 1837520787
+      Death_Summon_Loop_2: -1358462020
+      Death_Summon_Loop_3: -821520905
+      Death_Summon_Loop_4: 898326587
+      Death_Summon_Loop_5: 278609227
+      Death_Summon_Loop_6: 1780383998
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

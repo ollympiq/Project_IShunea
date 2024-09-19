@@ -170,7 +170,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -209,6 +209,7 @@ MonoBehaviour:
   attackHitbox: {fileID: 3869434815475075449}
   inventory: {fileID: 0}
   flagPrefab: {fileID: 2603779237416683434, guid: d412f327a583fcb4292cb2a9e46230b5, type: 3}
+  dropUpForce: 5
 --- !u!114 &7054354392685852928
 MonoBehaviour:
   m_ObjectHideFlags: 0

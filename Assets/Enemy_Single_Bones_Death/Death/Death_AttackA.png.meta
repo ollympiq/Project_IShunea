@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -147,7 +147,553 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Death_AttackA_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 247
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2351aa45ba82bb340920d35b4437da92
+      internalID: -1467691171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 250
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbcf6c2ce8bb3f408bf73dc499cbf32
+      internalID: -1926474539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_2
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 252
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3687354f13f03c48903f5ec26e98dea
+      internalID: 1530875329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_3
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 250
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef07b4abfc851c749af0269194d76836
+      internalID: 36329797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_4
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 249
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6807f1479d65a43bc49e471f5b4f66
+      internalID: -1328079700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 170
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32471a7739424e147b9c161f1947134b
+      internalID: -228861498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 167
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ebe62a19bf8a6478e1da16aa7b6c20
+      internalID: -1110854248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_7
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 164
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b370711268fe84f8e633da76f313ee
+      internalID: -143049066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_8
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 179
+        width: 86
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a7b13c1d8f8614aa6e4c4d6411d2c5
+      internalID: -546319013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_9
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 211
+        width: 88
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1bda157d9f1914ab2f8bc0ed7b4c39
+      internalID: 999278966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_10
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 165
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f767ad70754d51745a2f23cda18a0a29
+      internalID: 552280999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_11
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 165
+        width: 115
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174ce5d0880923f498ea39f8d7e9983e
+      internalID: -826606171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_12
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 135
+        width: 76
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b8f51d07d5e7246b6f5bd940d50062
+      internalID: 1397884624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_13
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 132
+        width: 40
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583c658057f13ca4c8129549d1666600
+      internalID: -1334799595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_14
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 85
+        width: 99
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6929bfa67d1418f4186ccc7f501b176c
+      internalID: -131998687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 86
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91060dd856587e54bae86d7f69588aee
+      internalID: -1321651943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_16
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 85
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbeadc1df83773940a7db1e26f7b2aed
+      internalID: 441552080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_17
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 85
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c8fb3ab897c8d48ac6ac4d487f5616
+      internalID: -1252890405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_18
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 88
+        width: 109
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ee7673d7620444aaa832a903175e93
+      internalID: -1214642476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_19
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5
+        width: 89
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb80f917de58e63449b205ea6f74a9d9
+      internalID: -2123306864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_20
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 6
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098eb2a8ffcaf7c42a02e63defe2d727
+      internalID: -210206797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_21
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 17
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e3278813abde542bbfdf508c70ef94
+      internalID: 1485768037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_22
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 18
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428558dcded1a9b4ba360161724f1ea3
+      internalID: 1212168273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_23
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 10
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fd173469a96e54892aec8fc899685b
+      internalID: 548678940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_24
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 8
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2764c116457ef664b8d48d8bf04f138a
+      internalID: -1536110170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_AttackA_25
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 9
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc298255b2ae9ea4a8eacdb577e3a93b
+      internalID: 2058341882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,7 +704,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Death_AttackA_0: -1467691171
+      Death_AttackA_1: -1926474539
+      Death_AttackA_10: 552280999
+      Death_AttackA_11: -826606171
+      Death_AttackA_12: 1397884624
+      Death_AttackA_13: -1334799595
+      Death_AttackA_14: -131998687
+      Death_AttackA_15: -1321651943
+      Death_AttackA_16: 441552080
+      Death_AttackA_17: -1252890405
+      Death_AttackA_18: -1214642476
+      Death_AttackA_19: -2123306864
+      Death_AttackA_2: 1530875329
+      Death_AttackA_20: -210206797
+      Death_AttackA_21: 1485768037
+      Death_AttackA_22: 1212168273
+      Death_AttackA_23: 548678940
+      Death_AttackA_24: -1536110170
+      Death_AttackA_25: 2058341882
+      Death_AttackA_3: 36329797
+      Death_AttackA_4: -1328079700
+      Death_AttackA_5: -228861498
+      Death_AttackA_6: -1110854248
+      Death_AttackA_7: -143049066
+      Death_AttackA_8: -546319013
+      Death_AttackA_9: 999278966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

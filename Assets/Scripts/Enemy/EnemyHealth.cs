@@ -60,6 +60,7 @@ public class EnemyHealth : MonoBehaviour
             if (!dead)
             {
                 anim.SetTrigger("die");
+                healthBarCanvas.SetActive(false);
                 SoundManager.instance.PlaySound(deathSound);
                 if (GetComponentInParent<EnemyPatrol>()!=null)
                     GetComponentInParent<EnemyPatrol>().enabled = false;

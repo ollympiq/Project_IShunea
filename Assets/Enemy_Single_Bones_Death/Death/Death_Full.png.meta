@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -147,7 +147,1540 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Death_Full_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 567
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d068c99e4520405438a67822eaf0939d
+      internalID: -1595550404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 570
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de7a078f61c5b44aba5348b2f99d65b
+      internalID: 2084535523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_2
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 572
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba5316a75576674b9532eb30584e633
+      internalID: -575774274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_3
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 570
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0cb395acba3a84db5d4675b2a3ee64
+      internalID: -1241727380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_4
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 569
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2047ab91b1d27e458b85e7b9e3b42e2
+      internalID: -170427613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_5
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 570
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5060084f21efea641b35d1e4170b55e5
+      internalID: -1465417537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_6
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 567
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb7d758a927708479b4df20f0d450be
+      internalID: -1668175810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_7
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 565
+        width: 115
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0d134922f229740af2f963cb6b3d97
+      internalID: -457038466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_8
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 564
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717b2eff647693b449bacc1fff8d8027
+      internalID: 1337685766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_9
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 579
+        width: 86
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3eabb93d4152e44b85f41a72636889
+      internalID: 704871799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 531
+        width: 88
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6666031cf8ddf146a1d1853ff0c03a7
+      internalID: 97673227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_11
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 535
+        width: 76
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4598e0c01c91d3e439eeacf4cfb58d5f
+      internalID: 508992598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_12
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 532
+        width: 40
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe45d8e2de6fd34383be15237f17cc7
+      internalID: 313431337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_13
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 485
+        width: 99
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde26c070e082a94b82d2dc8a0ba5a13
+      internalID: 879696225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 485
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f145d69ad1ffe96498251114983aea13
+      internalID: 1686928442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 486
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6455e35365ae1a04e964e636490b157f
+      internalID: -604855878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_16
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 485
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cccbf31cbac7ac545b6f7bc362fdc264
+      internalID: 2078156928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_17
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 485
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e119aed1006e8438586e280ebb2487
+      internalID: 531949971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_18
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 488
+        width: 109
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3feae7df738755e46a8b05a4ee48b53b
+      internalID: -1988074272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_19
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 485
+        width: 89
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793247d084f636c4daa2fd790187baf4
+      internalID: -108148174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_20
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 486
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93ceb73d41a5ea4fadae08fbc710c91
+      internalID: 833523153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_21
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 497
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a2ffdef995e194eab87d532b6d8342
+      internalID: -343743536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_22
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 498
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432873f403721b14ca304bf6c56ff10e
+      internalID: 141742420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_23
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 490
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82615bd735a63fd498315b541265cb0c
+      internalID: 1038759615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_24
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 489
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc7dee9e67656e429d367a354019ede
+      internalID: -1205294938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 408
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d3be36c29b8ce4ea060672eed64a1a
+      internalID: 370756306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_26
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 404
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746022a6ae479eb4ab6ced1733f713f1
+      internalID: -858171672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_27
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 404
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78247114aa79de940914ef10f4c6cf65
+      internalID: -378672762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_28
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 405
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c62dbd2269fdeb478191d0927795090
+      internalID: -530996594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_29
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 405
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a1b956768c3f14b97cefcaf5e9f784
+      internalID: 636322688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_30
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 406
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc38969b699d3d439a96807f1003e1d
+      internalID: 2120013360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_31
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 407
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d8cc29899dc7c46978898d7619b70a
+      internalID: 1366665122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_32
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 407
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc64cd465cdf6ae4b9238786f53433b9
+      internalID: -390417510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_33
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 408
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b3c1261fd912249a0c3c1b9bda566b
+      internalID: 1318184014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_34
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 331
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b73abd18b1507b48814c1ba80c6fcec
+      internalID: 1668101266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_35
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 329
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da068ba2991d074481c51e5edd0b7d7
+      internalID: 1040303064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_36
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 335
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b38b7af9533c64a9fb05d2e652a83b
+      internalID: -1325356367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_37
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 342
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd71a5d59651f0447ab03dfd14de1c08
+      internalID: -770071280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_38
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 366
+        width: 51
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11843f9322e08d48a921ea4461d5ed2
+      internalID: -1406309551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_39
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 320
+        width: 111
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d973400f16ce14e824dfaf07c0d7b6
+      internalID: -651830288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_40
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 320
+        width: 97
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a69c9b933e5ed842a65b44df32c7e3f
+      internalID: -1374454697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_41
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 320
+        width: 92
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d577ea011b0854a448d93871cd288c98
+      internalID: -1355554400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_42
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 320
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec5bbf6a46b31f408e122af6cb59b80
+      internalID: -1918180821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_43
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 240
+        width: 89
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea71fd887e670714792046c7d500eb84
+      internalID: 699075391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_44
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 240
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9938c0e2c3e11794eb25706390eccd38
+      internalID: -175471914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_45
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 240
+        width: 59
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bd209a3155dbe438ec10d2400ab692
+      internalID: 1161108614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_46
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 240
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54dbdd69bb13e8409299e71982bdb48
+      internalID: -623786429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_47
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 240
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe499855dbc666e4a8b293cf183415d9
+      internalID: 753828381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_48
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 247
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2459b71edeb434dbe7ebb5d7aa6f36
+      internalID: 1998049026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_49
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 248
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf586c3bc90e614448011f9cbfff22b8
+      internalID: 1440867868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_50
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 250
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da27447e6b67be4d9d8cf6f3f2a23be
+      internalID: 741810763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_51
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 250
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ece1095ca1ab4439cd28c76137570e
+      internalID: -578819040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_52
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 240
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9862e22036de95c43b519df6e33ba6fa
+      internalID: -70553737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_53
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 167
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f1a79822650c646abee47e867786bb
+      internalID: -1128503520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_54
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 164
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5537c670e372f41918826c3874f2d5
+      internalID: 1133625912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_55
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 164
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcce01626e1d00e48a047ead2373d801
+      internalID: -264449977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_56
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 165
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbc16745a555ec4c903c8c40c510d43
+      internalID: 1908382261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_57
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 166
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6c08ec81473fc4ca5537c9abeac564
+      internalID: 293275721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_58
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 168
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726f93de94e1ae34e9fa8a2dae3728bb
+      internalID: 1007265518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_59
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 171
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f00f0c7719d4a40a3796862c839f8f
+      internalID: -1026652478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_60
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 171
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc95920f0f0535646af481bf08f58cb2
+      internalID: 58944445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_61
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 170
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a3da8f35652144a92483d5b2fb4e06
+      internalID: -552984675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_62
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 89
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b93c81af3edc84095372cefb15276a
+      internalID: 687461396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_63
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 88
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f127916279f97479a8b1d0c90a0ab9
+      internalID: 1024930005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_64
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 87
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544980dd467507341834a676eddb3f99
+      internalID: 1756643710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_65
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 90
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a6ff75f48c68742a32c191e71bebb2
+      internalID: -1902292333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_66
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 91
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a238f6216873452498a9ff059ceba72b
+      internalID: -2045011088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_67
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 90
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d195eff52621b54b820900f966cf1f6
+      internalID: 869854535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_68
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 88
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7fd065115c3674195c67c1b10d247b
+      internalID: 599792507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_69
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 86
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181b2576b18c82640b793ff0898f408d
+      internalID: 88293710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_70
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 85
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81714b9e01319a5478ff4907f1e32811
+      internalID: -543272484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_71
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 6
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac259ab5e26d4b14c8d9b1b176eccba7
+      internalID: 852966231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_Full_72
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 7
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1b5ca3b1fee6d4fb3c37f188eb5005
+      internalID: -1148575909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,7 +1691,80 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Death_Full_0: -1595550404
+      Death_Full_1: 2084535523
+      Death_Full_10: 97673227
+      Death_Full_11: 508992598
+      Death_Full_12: 313431337
+      Death_Full_13: 879696225
+      Death_Full_14: 1686928442
+      Death_Full_15: -604855878
+      Death_Full_16: 2078156928
+      Death_Full_17: 531949971
+      Death_Full_18: -1988074272
+      Death_Full_19: -108148174
+      Death_Full_2: -575774274
+      Death_Full_20: 833523153
+      Death_Full_21: -343743536
+      Death_Full_22: 141742420
+      Death_Full_23: 1038759615
+      Death_Full_24: -1205294938
+      Death_Full_25: 370756306
+      Death_Full_26: -858171672
+      Death_Full_27: -378672762
+      Death_Full_28: -530996594
+      Death_Full_29: 636322688
+      Death_Full_3: -1241727380
+      Death_Full_30: 2120013360
+      Death_Full_31: 1366665122
+      Death_Full_32: -390417510
+      Death_Full_33: 1318184014
+      Death_Full_34: 1668101266
+      Death_Full_35: 1040303064
+      Death_Full_36: -1325356367
+      Death_Full_37: -770071280
+      Death_Full_38: -1406309551
+      Death_Full_39: -651830288
+      Death_Full_4: -170427613
+      Death_Full_40: -1374454697
+      Death_Full_41: -1355554400
+      Death_Full_42: -1918180821
+      Death_Full_43: 699075391
+      Death_Full_44: -175471914
+      Death_Full_45: 1161108614
+      Death_Full_46: -623786429
+      Death_Full_47: 753828381
+      Death_Full_48: 1998049026
+      Death_Full_49: 1440867868
+      Death_Full_5: -1465417537
+      Death_Full_50: 741810763
+      Death_Full_51: -578819040
+      Death_Full_52: -70553737
+      Death_Full_53: -1128503520
+      Death_Full_54: 1133625912
+      Death_Full_55: -264449977
+      Death_Full_56: 1908382261
+      Death_Full_57: 293275721
+      Death_Full_58: 1007265518
+      Death_Full_59: -1026652478
+      Death_Full_6: -1668175810
+      Death_Full_60: 58944445
+      Death_Full_61: -552984675
+      Death_Full_62: 687461396
+      Death_Full_63: 1024930005
+      Death_Full_64: 1756643710
+      Death_Full_65: -1902292333
+      Death_Full_66: -2045011088
+      Death_Full_67: 869854535
+      Death_Full_68: 599792507
+      Death_Full_69: 88293710
+      Death_Full_7: -457038466
+      Death_Full_70: -543272484
+      Death_Full_71: 852966231
+      Death_Full_72: -1148575909
+      Death_Full_8: 1337685766
+      Death_Full_9: 704871799
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
