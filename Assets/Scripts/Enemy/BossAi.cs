@@ -25,7 +25,13 @@ public class BossAi : MonoBehaviour
     private Transform player;
     private bool playerInAggroRange; // Player within chase range
     private bool playerInAttackRange; // Player within attack range
+    [SerializeField] private AudioClip attackSound;
+    [SerializeField] private AudioClip attackSound2;
+    [SerializeField] private AudioClip attackSound3;
 
+    [SerializeField] private float turnCooldown = 2f;
+    private float lastTurnTime;
+    private bool facingRight = true;
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -74,18 +80,43 @@ public class BossAi : MonoBehaviour
     {
         if (player != null)
         {
-            // Move towards the player's position
-            transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+            // Move towards the player's x position while keeping the y position constant
+            Vector2 targetPosition = new Vector2(player.position.x, transform.position.y);
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-            // Make the enemy face the player without altering its original scale
+            // Calculate the direction to the player
             Vector3 direction = (player.position - transform.position).normalized;
-            Vector3 originalScale = transform.localScale;
 
-            if (direction.x > 0)
-                transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z); // Face right
-            else
-                transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z); // Face left
+            // Check if enough time has passed since the last turn
+            if (Time.time >= lastTurnTime + turnCooldown)
+            {
+                // Only turn if the player is on the opposite side
+                if ((direction.x > 0 && !facingRight) || (direction.x < 0 && facingRight))
+                {
+                    // Turn the boss to face the player
+                    TurnBoss(direction.x);
+                }
+            }
         }
+    }
+
+    private void TurnBoss(float directionX)
+    {
+        if (directionX > 0)
+        {
+            // Face right
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            facingRight = true;
+        }
+        else
+        {
+            // Face left
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            facingRight = false;
+        }
+
+        // Reset the cooldown timer after turning
+        lastTurnTime = Time.time;
     }
 
     // Perform a random attack
@@ -225,5 +256,18 @@ public class BossAi : MonoBehaviour
         }
 
         Debug.Log("Player Pushed with continuous force");
+    }
+
+    public void SoundPLay()
+    {
+        SoundManager.instance.PlaySound(attackSound);
+    }
+    public void SoundPLay2()
+    {
+        SoundManager.instance.PlaySound(attackSound2);
+    }
+    public void SoundPLay3()
+    {
+        SoundManager.instance.PlaySound(attackSound3);
     }
 }

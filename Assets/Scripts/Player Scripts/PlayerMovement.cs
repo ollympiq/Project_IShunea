@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float playerSpeed = 10f;
+    [SerializeField] public float playerSpeed = 10f;
     [SerializeField] private float playerJumpSpeed = 6f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private AudioClip attackSound;
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private float pushPower = 2f;
-    
+
     private Rigidbody2D playerBody;
     private Animator animator;
     private BoxCollider2D boxCollider;
@@ -18,13 +18,16 @@ public class PlayerMovement : MonoBehaviour
     private float wallJumpCooldown;
     private float horizontalInput;
 
+    [SerializeField] public BoxCollider2D normalBoxCollider;
+    [SerializeField] public BoxCollider2D rollBoxCollider;
+
     private GameObject boxObject;
-    
+
     private bool isHoldingFlag = false;
 
 
     [SerializeField] private BoxCollider2D attackHitbox;
-    [SerializeField] private Inventory inventory; 
+    [SerializeField] private Inventory inventory;
 
     private GameObject keyObject;
     private GameObject chestObject;
@@ -37,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
 
+        normalBoxCollider.enabled = true;
+        rollBoxCollider.enabled = false;
 
         playerBody.constraints = RigidbodyConstraints2D.FreezeRotation;
         attackHitbox.enabled = false;
@@ -60,7 +65,17 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("run", horizontalInput != 0);
         animator.SetBool("grounded", isGrounded());
 
-        
+        if (isGrounded())
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                
+                animator.SetTrigger("roll");
+                normalBoxCollider.enabled = false;
+                playerSpeed = 10f;
+                rollBoxCollider.enabled = true;
+            }
+        }
 
         //wall jump
         if (wallJumpCooldown > 0.3f)
@@ -76,15 +91,15 @@ public class PlayerMovement : MonoBehaviour
             else
                 playerBody.gravityScale = 1;
 
-            if (Input.GetKey(KeyCode.Space)) 
-            { 
+            if (Input.GetKey(KeyCode.Space))
+            {
                 Jump();
-                if (Input.GetKeyDown(KeyCode.Space)&& isGrounded() || onWall()) 
+                if (Input.GetKeyDown(KeyCode.Space) && isGrounded() || onWall())
                 {
                     SoundManager.instance.PlaySound(jumpSound);
                 }
             }
-                
+
         }
         else wallJumpCooldown += Time.deltaTime;
 
@@ -99,8 +114,8 @@ public class PlayerMovement : MonoBehaviour
             if (inventory.AddItem(keyObject))
             {
                 Debug.Log("Key picked up!");
-                Destroy(keyObject); 
-                keyObject = null; 
+                Destroy(keyObject);
+                keyObject = null;
             }
         }
         if (flagObject != null && Input.GetKeyDown(KeyCode.E))
@@ -108,17 +123,17 @@ public class PlayerMovement : MonoBehaviour
             if (inventory.AddItem(flagObject))
             {
                 Debug.Log("Flag picked up!");
-                flagObject = null; 
+                flagObject = null;
             }
         }
 
-        
+
         if (chestObject != null && Input.GetKeyDown(KeyCode.E))
         {
-            if (inventory.HasItem("Key")) 
+            if (inventory.HasItem("Key"))
             {
                 OpenChest();
-                inventory.RemoveItem("Key"); 
+                inventory.RemoveItem("Key");
             }
         }
 
@@ -126,10 +141,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                
+
                 animator.SetTrigger("attacking");
                 attackCooldown = 0;
-                
+                normalBoxCollider.enabled = true;
+                rollBoxCollider.enabled = false;
             }
         }
         else
@@ -143,6 +159,8 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded())
         {
             playerBody.velocity = new Vector2(playerBody.velocity.x, playerJumpSpeed);
+            normalBoxCollider.enabled = true;
+            rollBoxCollider.enabled = false;
         }
         else if (onWall() && !isGrounded())
         {
@@ -184,7 +202,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Box"))
         {
-            boxObject = null; 
+            boxObject = null;
         }
     }
 
@@ -243,31 +261,31 @@ public class PlayerMovement : MonoBehaviour
         attackHitbox.enabled = false;
     }
 
-    public void SoundPLay() 
+    public void SoundPLay()
     {
         SoundManager.instance.PlaySound(attackSound);
     }
 
     private void OpenChest()
     {
-        
+
         Animator chestAnimator = chestObject.GetComponent<Animator>();
         if (chestAnimator != null)
         {
             chestAnimator.SetTrigger("Open");
         }
 
-        
+
         if (flagPrefab != null)
         {
             GameObject flagInstance = Instantiate(flagPrefab, chestObject.transform.position + new Vector3(0, 1, 0), Quaternion.identity);
-            flagInstance.SetActive(true); 
+            flagInstance.SetActive(true);
 
-            
+
             Rigidbody2D flagRigidbody = flagInstance.GetComponent<Rigidbody2D>();
             if (flagRigidbody != null)
             {
-                flagRigidbody.AddForce(new Vector2(0, dropUpForce), ForceMode2D.Impulse); 
+                flagRigidbody.AddForce(new Vector2(0, dropUpForce), ForceMode2D.Impulse);
             }
             else
             {
@@ -278,5 +296,12 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.LogError("Flag prefab is not assigned in the Inspector!");
         }
+    }
+
+    public void ResetColliderAfterRoll()
+    {
+        normalBoxCollider.enabled = true;
+        rollBoxCollider.enabled = false;
+        playerSpeed = 7f;
     }
 }

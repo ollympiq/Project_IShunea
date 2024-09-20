@@ -268,4 +268,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarFill: {fileID: 8434282648380073036}
   enemyHealth: {fileID: 0}
-  offset: {x: 0, y: 5, z: 0}
+  offset: {x: 0, y: 7, z: 0}
