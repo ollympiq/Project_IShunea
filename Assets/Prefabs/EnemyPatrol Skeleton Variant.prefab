@@ -171,7 +171,7 @@ MonoBehaviour:
   iFramesDuration: 3
   numberOfFlashes: 1
   hitSound: {fileID: 8300000, guid: 235748a8303a08741b8656ae80caf988, type: 3}
-  deathSound: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
+  deathSound: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
 --- !u!114 &3886715061685052806
 MonoBehaviour:
   m_ObjectHideFlags: 0

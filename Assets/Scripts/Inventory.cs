@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour
 {
-    public Image[] slotImages = new Image[2]; 
-    private GameObject[] slots = new GameObject[2];
+    public Image[] slotImages = new Image[1]; 
+    private GameObject[] slots = new GameObject[1];
     private List<string> items = new List<string>();
 
     public bool AddItem(GameObject item)
@@ -59,6 +59,9 @@ public class Inventory : MonoBehaviour
                 if (spriteRenderer != null)
                 {
                     slotImages[slotIndex].sprite = spriteRenderer.sprite;
+                    Color color = slotImages[slotIndex].color;
+                    color.a = 1f; 
+                    slotImages[slotIndex].color = color;
                     slotImages[slotIndex].enabled = true;
                 }
             }
@@ -66,6 +69,9 @@ public class Inventory : MonoBehaviour
             {
                 
                 slotImages[slotIndex].sprite = null;
+                Color color = slotImages[slotIndex].color;
+                color.a = 0f; 
+                slotImages[slotIndex].color = color;
                 slotImages[slotIndex].enabled = false;
             }
         }

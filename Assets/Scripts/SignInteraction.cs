@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class SignInteraction : MonoBehaviour
 {
-    public GameObject uiPanel;  
-    public Text uiText;        
+    public GameObject uiPanel;
+    public Text uiText;
     public string signMessage = "This is the message on the sign.";  
     private bool isPlayerNearby = false;
 

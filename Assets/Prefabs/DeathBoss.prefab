@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 9190237675781645526}
   - component: {fileID: 1060538759726041899}
   - component: {fileID: 2406403598591378812}
-  - component: {fileID: 8076893448999462582}
   m_Layer: 9
   m_Name: DeathBoss
   m_TagString: Enemy
@@ -34,7 +33,8 @@ Transform:
   m_LocalPosition: {x: 155.53123, y: -0.49, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5927196913267930731}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2803590420437111834
@@ -121,7 +121,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.043952942, y: 0.18558073}
+  m_Offset: {x: 0.043952942, y: 0.0590899}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3104706, y: 2.3163385}
+  m_Size: {x: 1.3104706, y: 2.5693202}
   m_EdgeRadius: 0
 --- !u!95 &9190237675781645526
 Animator:
@@ -167,9 +167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21de4a588e54464c8d202e556c55709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 3
-  range: 2.5
-  colliderDistance: 0.8
+  attackCooldown: 2
+  range: 3
+  colliderDistance: 0.4
   aggroRange: 35
   damage: 2
   moveSpeed: 2
@@ -177,14 +177,14 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
-  summonCollider: {fileID: 8076893448999462582}
+  summonCollider: {fileID: 2208580288070069076}
   expansionSpeed: 8
   maxExpansionSize: 20
   pushForce: 0
   attackSound: {fileID: 8300000, guid: 21c4a490b24ba2045bc815f7626a40ef, type: 3}
   attackSound2: {fileID: 8300000, guid: 56703418e3aed4c47a5f6622816b8e41, type: 3}
   attackSound3: {fileID: 8300000, guid: 7a9de5c4d998126449cf964a6b27a8b0, type: 3}
-  turnCooldown: 4
+  turnCooldown: 2
 --- !u!114 &2406403598591378812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,14 +202,46 @@ MonoBehaviour:
   iFramesDuration: 1
   numberOfFlashes: 1
   hitSound: {fileID: 8300000, guid: 235748a8303a08741b8656ae80caf988, type: 3}
-  deathSound: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
---- !u!61 &8076893448999462582
+  deathSound: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
+--- !u!1 &9097314312368231478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5927196913267930731}
+  - component: {fileID: 2208580288070069076}
+  m_Layer: 9
+  m_Name: pushCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5927196913267930731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9097314312368231478}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5401222567171216408}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2208580288070069076
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7652503104552454807}
+  m_GameObject: {fileID: 9097314312368231478}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -235,16 +267,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.060424805, y: 0}
+  m_Offset: {x: -0.020046234, y: -0.30570912}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.75, y: 2.6875}
-    newSize: {x: 1.75, y: 2.6875}
-    adaptiveTilingThreshold: 0.5
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.39045715, y: 2.6875}
+  m_Size: {x: 0.35851288, y: 3.2953248}
   m_EdgeRadius: 0

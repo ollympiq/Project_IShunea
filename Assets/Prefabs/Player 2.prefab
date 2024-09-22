@@ -34,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.3, y: -1.12, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 206701684536644841}
@@ -207,7 +207,7 @@ MonoBehaviour:
     m_Bits: 128
   attackSound: {fileID: 8300000, guid: 88b1cbe3caa3fee4b8b103b5edd7aba9, type: 3}
   jumpSound: {fileID: 8300000, guid: 4e349dc959014a845b9aa317d1c2b7f0, type: 3}
-  pushPower: 3
+  pushPower: 2
   normalBoxCollider: {fileID: 581620440273070583}
   rollBoxCollider: {fileID: 5071194770695456220}
   attackHitbox: {fileID: 3869434815475075449}
@@ -226,10 +226,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96ac91243a4ecf4ba2d5385ffeaeb5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 5
+  startingHealth: 10
   gameOverScreen: {fileID: 0}
   gameOverSound: {fileID: 8300000, guid: 7cc057bed53baf34799f52aab3c84800, type: 3}
-  iFramesDuration: 5
+  iFramesDuration: 3
   numberOfFlashes: 1
   hitSound: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
   deathSound: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
@@ -246,7 +246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotImages:
-  - {fileID: 0}
   - {fileID: 0}
 --- !u!61 &5071194770695456220
 BoxCollider2D:
