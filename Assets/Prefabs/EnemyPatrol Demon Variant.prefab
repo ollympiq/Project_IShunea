@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.12, y: -1.23, z: 0.082811035}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 76900757691382238}
@@ -167,11 +167,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarCanvas: {fileID: 0}
-  startingHealth: 5
-  iFramesDuration: 3
+  startingHealth: 20
+  iFramesDuration: 1
   numberOfFlashes: 1
   hitSound: {fileID: 8300000, guid: 235748a8303a08741b8656ae80caf988, type: 3}
   deathSound: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
+  maxHitsBeforeInvulnerability: 2
+  invulnerabilityDuration: 1
 --- !u!114 &8048707754045512574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,10 +186,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6819129754adfb248b065298061d2a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 1
-  range: 2
-  colliderDistance: 0.3
-  damage: 2
+  attackCooldown: 0
+  range: 1.85
+  colliderDistance: 0.4
+  damage: 3
   boxCollider: {fileID: 3649781116225519288}
   playerLayer:
     serializedVersion: 2
@@ -248,11 +250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4014675767803004542, guid: 304e58c25c719884983b666dd825e09b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.84
+      value: -4.63
       objectReference: {fileID: 0}
     - target: {fileID: 6288940892401636683, guid: 304e58c25c719884983b666dd825e09b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.22
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7126684403965165344, guid: 304e58c25c719884983b666dd825e09b, type: 3}
       propertyPath: anim

@@ -52,12 +52,12 @@ public class EnemyPatrol : MonoBehaviour
         if (_direction == -1)
         {
             
-            enemy.localScale = new Vector3(6, initScale.y, initScale.z);
+            enemy.localScale = new Vector3(4, initScale.y, initScale.z);
         }
         else
         {
             
-            enemy.localScale = new Vector3(-6, initScale.y, initScale.z);
+            enemy.localScale = new Vector3(-4, initScale.y, initScale.z);
         }
 
         
