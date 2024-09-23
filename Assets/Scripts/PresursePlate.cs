@@ -8,8 +8,9 @@ public class PresursePlate : MonoBehaviour
     [SerializeField] private Transform plate;         
     [SerializeField] private float raisedHeight = 3f; 
     [SerializeField] private float platePressDepth = 0.2f;
-    [SerializeField] private float moveSpeed = 2f;    
-
+    [SerializeField] private float moveSpeed = 2f;
+    [SerializeField] private AudioClip movingUp;
+   
     private Vector3 initialGatePosition;              
     private Vector3 raisedGatePosition;               
     private Vector3 initialPlatePosition;             
@@ -58,7 +59,8 @@ public class PresursePlate : MonoBehaviour
         if (collision.CompareTag("Box") || collision.CompareTag("Player"))
         {
             objectsOnPlate++;
-            gateMovingUp = true;  
+            gateMovingUp = true;
+            SoundManager.instance.PlaySound(movingUp);
         }
     }
 
@@ -69,7 +71,8 @@ public class PresursePlate : MonoBehaviour
             objectsOnPlate--;
             if (objectsOnPlate == 0)
             {
-                gateMovingUp = false;  
+                gateMovingUp = false;
+                SoundManager.instance.PlaySound(movingUp);
             }
         }
     }

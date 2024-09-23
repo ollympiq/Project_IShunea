@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 6736969631384680505}
   - component: {fileID: 539458865845066166}
   - component: {fileID: 6685583559714249602}
-  m_Layer: 0
+  - component: {fileID: 8946674850780295819}
+  m_Layer: 10
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -877933732, guid: 7810966f0f690954c87305933cabf2b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -130,3 +131,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.21875, y: 2.0625}
   m_EdgeRadius: 0
+--- !u!114 &8946674850780295819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045437396590068831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf06e775e8e0f1645b9129c4e63dae34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iFramesDuration: 1
+  numberOfFlashes: 1
+  hitSound: {fileID: 8300000, guid: 235748a8303a08741b8656ae80caf988, type: 3}

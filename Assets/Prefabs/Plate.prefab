@@ -148,3 +148,4 @@ MonoBehaviour:
   raisedHeight: 3
   platePressDepth: 0.2
   moveSpeed: 2
+  moving: {fileID: 8300000, guid: 57f21e3059e0cd646ab98608c093beb3, type: 3}

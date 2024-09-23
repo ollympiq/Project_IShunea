@@ -9,7 +9,7 @@ public class EndLine : MonoBehaviour
     {
         if (inventory != null && inventory.HasItem("Flag"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex );
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

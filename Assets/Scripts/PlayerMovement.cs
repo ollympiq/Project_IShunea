@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] public float playerSpeed = 10f;
-    [SerializeField] private float playerJumpSpeed = 6f;
+    [SerializeField] public float playerSpeed = 5f;
+    [SerializeField] private float playerJumpSpeed = 4f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private AudioClip attackSound;
@@ -79,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
                 
                 animator.SetTrigger("roll");
                 normalBoxCollider.enabled = false;
-                playerSpeed = 10f;
+                playerSpeed = 8f;
                 rollBoxCollider.enabled = true;
             }
         }
@@ -151,7 +151,7 @@ public class PlayerMovement : MonoBehaviour
 
                 animator.SetTrigger("attacking");
                 attackCooldown = 0;
-                
+                playerSpeed = 6f;
                 normalBoxCollider.enabled = true;
                 rollBoxCollider.enabled = false;
             }
@@ -319,6 +319,6 @@ public class PlayerMovement : MonoBehaviour
     {
         normalBoxCollider.enabled = true;
         rollBoxCollider.enabled = false;
-        playerSpeed = 7f;
+        playerSpeed = 6f;
     }
 }

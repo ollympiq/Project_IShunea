@@ -44,7 +44,7 @@ public class Health : MonoBehaviour
             SoundManager.instance.PlaySound(hitSound);
             HandleCollidersOnHurt();
             StartCoroutine(Invulnerability());
-            
+            playerMovement.playerSpeed = 6f;
             
         }
         else {
@@ -86,6 +86,5 @@ public class Health : MonoBehaviour
         playerMovement.rollBoxCollider.enabled = false;
 
         
-        playerMovement.playerSpeed = 7f; 
     }
 }
