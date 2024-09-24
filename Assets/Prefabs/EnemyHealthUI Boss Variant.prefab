@@ -16,6 +16,26 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 538809025087438118, guid: 0ce57096061e00745a36841486588a87, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1899934217
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063021469486364468, guid: 0ce57096061e00745a36841486588a87, type: 3}
+      propertyPath: offset.y
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537374541782298333, guid: 0ce57096061e00745a36841486588a87, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537374541782298333, guid: 0ce57096061e00745a36841486588a87, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537374541782298333, guid: 0ce57096061e00745a36841486588a87, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3599145695456621430, guid: 0ce57096061e00745a36841486588a87, type: 3}
       propertyPath: m_SizeDelta.x
       value: 20

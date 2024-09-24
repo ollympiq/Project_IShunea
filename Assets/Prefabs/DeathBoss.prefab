@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 155.53123, y: -0.49, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5927196913267930731}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1899934217
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -218099816, guid: c61d9e82bb769c146a63d588a6d3cb0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -170,8 +170,8 @@ MonoBehaviour:
   attackCooldown: 2
   range: 3
   colliderDistance: 0.4
-  aggroRange: 35
-  damage: 2
+  aggroRange: 18
+  damage: 1
   moveSpeed: 2
   boxCollider: {fileID: 5491033506351099115}
   playerLayer:
@@ -179,7 +179,7 @@ MonoBehaviour:
     m_Bits: 256
   summonCollider: {fileID: 2208580288070069076}
   expansionSpeed: 8
-  maxExpansionSize: 20
+  maxExpansionSize: 10
   pushForce: 0
   attackSound: {fileID: 8300000, guid: 21c4a490b24ba2045bc815f7626a40ef, type: 3}
   attackSound2: {fileID: 8300000, guid: 56703418e3aed4c47a5f6622816b8e41, type: 3}
@@ -203,6 +203,8 @@ MonoBehaviour:
   numberOfFlashes: 1
   hitSound: {fileID: 8300000, guid: 235748a8303a08741b8656ae80caf988, type: 3}
   deathSound: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
+  maxHitsBeforeInvulnerability: 3
+  invulnerabilityDuration: 2
 --- !u!1 &9097314312368231478
 GameObject:
   m_ObjectHideFlags: 0

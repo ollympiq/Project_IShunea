@@ -105,6 +105,10 @@ PrefabInstance:
       value: -4.24
       objectReference: {fileID: 0}
     - target: {fileID: 8727516548740703464, guid: 7ae3900d54434ff46892393ed67601df, type: 3}
+      propertyPath: offset.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727516548740703464, guid: 7ae3900d54434ff46892393ed67601df, type: 3}
       propertyPath: healthBarFill
       value: 
       objectReference: {fileID: 6451809399061772291}

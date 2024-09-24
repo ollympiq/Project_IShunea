@@ -172,7 +172,7 @@ MonoBehaviour:
   numberOfFlashes: 1
   hitSound: {fileID: 8300000, guid: 235748a8303a08741b8656ae80caf988, type: 3}
   deathSound: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
-  maxHitsBeforeInvulnerability: 2
+  maxHitsBeforeInvulnerability: 3
   invulnerabilityDuration: 1
 --- !u!114 &8048707754045512574
 MonoBehaviour:

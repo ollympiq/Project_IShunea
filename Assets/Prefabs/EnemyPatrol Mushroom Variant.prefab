@@ -167,11 +167,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarCanvas: {fileID: 0}
-  startingHealth: 3
-  iFramesDuration: 3
+  startingHealth: 8
+  iFramesDuration: 1
   numberOfFlashes: 1
   hitSound: {fileID: 8300000, guid: 235748a8303a08741b8656ae80caf988, type: 3}
   deathSound: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
+  maxHitsBeforeInvulnerability: 2
+  invulnerabilityDuration: 1
 --- !u!114 &3648278935387759929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,10 +186,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 199e4bdd4ca2cfd4aa9c3feac45b9e92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
+  attackCooldown: 1
   range: 1.5
   colliderDistance: 0.1
-  damage: 1
+  damage: 2
   boxCollider: {fileID: 7167039141125959718}
   playerLayer:
     serializedVersion: 2

@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6735104454ceb8d4393ff1c6c67daab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 1
+  attackCooldown: 1.7
   firePoint: {fileID: 1545042133353235286}
   arrows:
   - {fileID: 1376778535217205915}
@@ -216,7 +216,6 @@ MonoBehaviour:
   - {fileID: 8140245205488277882}
   - {fileID: 1595335772873037038}
   - {fileID: 4468607294417296627}
-  arrowSound: {fileID: 8300000, guid: 6aa7bd0802fdb23498cbe45bae599864, type: 3}
 --- !u!1001 &626903714564902026
 PrefabInstance:
   m_ObjectHideFlags: 0
