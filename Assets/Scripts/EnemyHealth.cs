@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour
 {
+    [SerializeField] private GameObject chestPrefab;
     public GameObject healthBarCanvas;
     [SerializeField] private float startingHealth;
     private Animator anim;
@@ -115,6 +116,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (GetComponent<MeleeEnemy>() != null)
             GetComponent<MeleeEnemy>().enabled = false;
+        SpawnChest();
     }
 
     private IEnumerator Invulnerability()
@@ -131,5 +133,12 @@ public class EnemyHealth : MonoBehaviour
     private void DeActivate()
     {
         gameObject.SetActive(false);
+    }
+    private void SpawnChest()
+    {
+        if (chestPrefab != null)
+        {
+            Instantiate(chestPrefab, transform.position, Quaternion.identity);
+        }
     }
 }

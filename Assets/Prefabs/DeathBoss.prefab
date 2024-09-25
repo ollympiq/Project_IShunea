@@ -197,6 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f0320da8178974ebbf258dcc400893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chestPrefab: {fileID: 7942969150988689977, guid: e68f7774298fc40489b8106c3c23422f, type: 3}
   healthBarCanvas: {fileID: 0}
   startingHealth: 50
   iFramesDuration: 1

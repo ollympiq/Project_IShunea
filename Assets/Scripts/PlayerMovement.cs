@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private float pushPower = 2f;
 
+    private float rollCooldown = 1.2f; 
+    private float currentRollCooldown = 0f; 
+
     private Rigidbody2D playerBody;
     private Animator animator;
     private BoxCollider2D boxCollider;
@@ -72,16 +75,20 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("run", horizontalInput != 0);
         animator.SetBool("grounded", isGrounded());
 
-        if (isGrounded())
+        if (isGrounded() && currentRollCooldown >= rollCooldown)
         {
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(1)) // Right mouse button for roll
             {
-                
                 animator.SetTrigger("roll");
                 normalBoxCollider.enabled = false;
                 playerSpeed = 8f;
                 rollBoxCollider.enabled = true;
+                currentRollCooldown = 0f; // Reset cooldown after roll
             }
+        }
+        else
+        {
+            currentRollCooldown += Time.deltaTime; // Increment cooldown timer
         }
 
         //wall jump

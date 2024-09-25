@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 199e4bdd4ca2cfd4aa9c3feac45b9e92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 1
+  attackCooldown: 0
   range: 1.5
   colliderDistance: 0.1
   damage: 2
