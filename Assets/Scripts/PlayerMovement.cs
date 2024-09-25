@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
 
 
-        //flip
+        
         if (horizontalInput > 0.01f)
         {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
@@ -70,28 +70,28 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        //set animator parameter
+        
 
         animator.SetBool("run", horizontalInput != 0);
         animator.SetBool("grounded", isGrounded());
 
         if (isGrounded() && currentRollCooldown >= rollCooldown)
         {
-            if (Input.GetMouseButtonDown(1)) // Right mouse button for roll
+            if (Input.GetMouseButtonDown(1)) 
             {
                 animator.SetTrigger("roll");
                 normalBoxCollider.enabled = false;
                 playerSpeed = 8f;
                 rollBoxCollider.enabled = true;
-                currentRollCooldown = 0f; // Reset cooldown after roll
+                currentRollCooldown = 0f; 
             }
         }
         else
         {
-            currentRollCooldown += Time.deltaTime; // Increment cooldown timer
+            currentRollCooldown += Time.deltaTime; 
         }
 
-        //wall jump
+       
         if (wallJumpCooldown > 0.3f)
         {
 

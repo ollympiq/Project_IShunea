@@ -8,7 +8,7 @@ public class EnemyHealthBar : MonoBehaviour
     [SerializeField] private EnemyHealth enemyHealth;
     [SerializeField] private Vector3 offset;
 
-    // Update is called once per frame
+  
     void Update()
     {
         transform.position = enemyHealth.transform.position + offset;

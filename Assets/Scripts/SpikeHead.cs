@@ -46,7 +46,7 @@ public class Spikehead : EnemyDamage
                 destination = directions[i];
                 checkTimer = 0;
 
-                // Start the coroutine to stop after a delay
+                
                 StartCoroutine(StopAfterDelay());
             }
         }

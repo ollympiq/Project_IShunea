@@ -5,26 +5,26 @@ using UnityEngine;
 public class BossAi : MonoBehaviour
 {
     [SerializeField] private float attackCooldown;
-    [SerializeField] private float range; // Attack range
-    [SerializeField] private float colliderDistance; // Attack collider distance
-    [SerializeField] private float aggroRange; // Distance where the boss starts chasing
+    [SerializeField] private float range; 
+    [SerializeField] private float colliderDistance; 
+    [SerializeField] private float aggroRange; 
     [SerializeField] private int damage;
-    [SerializeField] private float moveSpeed; // Speed for moving toward the player
-    [SerializeField] private BoxCollider2D boxCollider; // Attack range collider
+    [SerializeField] private float moveSpeed; 
+    [SerializeField] private BoxCollider2D boxCollider; 
     [SerializeField] private LayerMask playerLayer;
 
     [Header("Summon Attack")]
-    [SerializeField] private BoxCollider2D summonCollider; // The collider for the summon attack
-    [SerializeField] private float expansionSpeed = 2f; // Speed of expanding the summon collider
-    [SerializeField] private float maxExpansionSize = 10f; // Maximum size of the summon collider
-    [SerializeField] private float pushForce = 10f; // Force to push the player away
+    [SerializeField] private BoxCollider2D summonCollider; 
+    [SerializeField] private float expansionSpeed = 2f; 
+    [SerializeField] private float maxExpansionSize = 10f; 
+    [SerializeField] private float pushForce = 10f; 
 
     private float cooldownTimer = Mathf.Infinity;
     private Animator anim;
     private Health playerHealth;
     private Transform player;
-    private bool playerInAggroRange; // Player within chase range
-    private bool playerInAttackRange; // Player within attack range
+    private bool playerInAggroRange;
+    private bool playerInAttackRange; 
     [SerializeField] private AudioClip attackSound;
     [SerializeField] private AudioClip attackSound2;
     [SerializeField] private AudioClip attackSound3;
@@ -35,7 +35,7 @@ public class BossAi : MonoBehaviour
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        summonCollider.enabled = false; // Disable summon collider initially
+        summonCollider.enabled = false; 
         if (boxCollider == null)
             boxCollider = GetComponent<BoxCollider2D>();
 
@@ -45,7 +45,7 @@ public class BossAi : MonoBehaviour
         if (anim == null)
             anim = GetComponent<Animator>();
 
-        // Disable summon collider initially
+       
         summonCollider.enabled = false;
     }
 
@@ -53,15 +53,15 @@ public class BossAi : MonoBehaviour
     {
         cooldownTimer += Time.deltaTime;
 
-        // Check if player is in aggro range (to start chasing)
+       
         playerInAggroRange = PlayerInAggroRange();
 
-        // Check if player is in attack range (to start attacking)
+       
         playerInAttackRange = PlayerInAttackRange();
 
         if (playerInAggroRange && !playerInAttackRange)
         {
-            // Chase the player if within aggro range but not in attack range
+            
             MoveTowardPlayer();
         }
 
@@ -75,25 +75,25 @@ public class BossAi : MonoBehaviour
         }
     }
 
-    // Function to move toward the player
+    
     private void MoveTowardPlayer()
     {
         if (player != null)
         {
-            // Move towards the player's x position while keeping the y position constant
+            
             Vector2 targetPosition = new Vector2(player.position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-            // Calculate the direction to the player
+            
             Vector3 direction = (player.position - transform.position).normalized;
 
-            // Check if enough time has passed since the last turn
+           
             if (Time.time >= lastTurnTime + turnCooldown)
             {
-                // Only turn if the player is on the opposite side
+                
                 if ((direction.x > 0 && !facingRight) || (direction.x < 0 && facingRight))
                 {
-                    // Turn the boss to face the player
+                    
                     TurnBoss(direction.x);
                 }
             }
@@ -104,25 +104,25 @@ public class BossAi : MonoBehaviour
     {
         if (directionX > 0)
         {
-            // Face right
+         
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             facingRight = true;
         }
         else
         {
-            // Face left
+            
             transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             facingRight = false;
         }
 
-        // Reset the cooldown timer after turning
+        
         lastTurnTime = Time.time;
     }
 
-    // Perform a random attack
+    
     private void PerformRandomAttack()
     {
-        int attackIndex = Random.Range(0, 3); // Randomly select one of the three attacks
+        int attackIndex = Random.Range(0, 3); 
 
         switch (attackIndex)
         {
@@ -138,7 +138,7 @@ public class BossAi : MonoBehaviour
         }
     }
 
-    // Check if the player is in attack range
+   
     private bool PlayerInAttackRange()
     {
         RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
@@ -146,7 +146,7 @@ public class BossAi : MonoBehaviour
 
         if (hit.collider != null)
         {
-            player = hit.transform; // Store player's position
+            player = hit.transform; 
 
             // Safely get the Health component
             playerHealth = hit.transform.GetComponent<Health>();
@@ -159,14 +159,14 @@ public class BossAi : MonoBehaviour
         return hit.collider != null;
     }
 
-    // Check if the player is in the boss's aggro range (for chasing)
+    
     private bool PlayerInAggroRange()
     {
         Collider2D hit = Physics2D.OverlapCircle(transform.position, aggroRange, playerLayer);
 
         if (hit != null)
         {
-            player = hit.transform; // Store the player's position
+            player = hit.transform; 
             playerHealth = hit.transform.GetComponent<Health>();
         }
 
@@ -175,17 +175,17 @@ public class BossAi : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        // Visualize attack range
+        
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
 
-        // Visualize aggro range
+        
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, aggroRange);
     }
 
-    // Function to deal damage to the player
+    
     private void DamagePlayer()
     {
         if (PlayerInAttackRange())
@@ -194,7 +194,7 @@ public class BossAi : MonoBehaviour
         }
     }
 
-    // Animation event triggered when the boss raises hands (summon animation)
+    
     public void SummonEvent()
     {
         Debug.Log("Summon Event Triggered");
@@ -211,18 +211,18 @@ public class BossAi : MonoBehaviour
 
         while (currentSize.x < maxExpansionSize)
         {
-            currentSize += new Vector2(expansionSpeed * Time.deltaTime, 0); // Expand left and right
+            currentSize += new Vector2(expansionSpeed * Time.deltaTime, 0); 
             summonCollider.size = currentSize;
-            yield return null; // Wait for the next frame
+            yield return null; 
         }
 
         Debug.Log("Summon Collider Max Expansion Reached");
 
-        yield return new WaitForSeconds(2f); // Collider stays active for 2 seconds after full expansion
+        yield return new WaitForSeconds(2f); 
 
-        // After the collider has fully expanded, deactivate it
+       
         summonCollider.enabled = false;
-        summonCollider.size = originalSize; // Reset the size for next use
+        summonCollider.size = originalSize; 
 
         Debug.Log("Summon Collider Reset");
     }
@@ -236,7 +236,7 @@ public class BossAi : MonoBehaviour
             {
                 Vector2 pushDirection = (collision.transform.position - transform.position).normalized;
 
-                // Continuously push the player over a short time for more noticeable effect
+                
                 StartCoroutine(PushPlayer(playerRb, pushDirection));
             }
         }
@@ -244,13 +244,13 @@ public class BossAi : MonoBehaviour
 
     private IEnumerator PushPlayer(Rigidbody2D playerRb, Vector2 pushDirection)
     {
-        float pushDuration = 0.5f; // Duration of the push
-        float pushForce = 200f; // Stronger push
+        float pushDuration = 0.5f; 
+        float pushForce = 200f; 
 
         float elapsed = 0f;
         while (elapsed < pushDuration)
         {
-            playerRb.AddForce(pushDirection * pushForce * Time.deltaTime, ForceMode2D.Force); // Apply force over time
+            playerRb.AddForce(pushDirection * pushForce * Time.deltaTime, ForceMode2D.Force);
             elapsed += Time.deltaTime;
             yield return null;
         }
