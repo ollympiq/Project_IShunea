@@ -17,7 +17,7 @@ public class BossAi : MonoBehaviour
     [SerializeField] private BoxCollider2D summonCollider; 
     [SerializeField] private float expansionSpeed = 2f; 
     [SerializeField] private float maxExpansionSize = 10f; 
-    [SerializeField] private float pushForce = 10f; 
+    
 
     private float cooldownTimer = Mathf.Infinity;
     private Animator anim;
@@ -226,7 +226,7 @@ public class BossAi : MonoBehaviour
 
         Debug.Log("Summon Collider Reset");
     }
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && summonCollider.enabled)
@@ -237,26 +237,12 @@ public class BossAi : MonoBehaviour
                 Vector2 pushDirection = (collision.transform.position - transform.position).normalized;
 
                 
-                StartCoroutine(PushPlayer(playerRb, pushDirection));
+                
             }
         }
     }
 
-    private IEnumerator PushPlayer(Rigidbody2D playerRb, Vector2 pushDirection)
-    {
-        float pushDuration = 0.5f; 
-        float pushForce = 200f; 
-
-        float elapsed = 0f;
-        while (elapsed < pushDuration)
-        {
-            playerRb.AddForce(pushDirection * pushForce * Time.deltaTime, ForceMode2D.Force);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        Debug.Log("Player Pushed with continuous force");
-    }
+    
 
     public void SoundPLay()
     {
