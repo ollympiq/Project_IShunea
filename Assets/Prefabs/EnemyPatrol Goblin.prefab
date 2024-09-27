@@ -166,8 +166,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f0320da8178974ebbf258dcc400893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chestPrefab: {fileID: 0}
   healthBarCanvas: {fileID: 0}
-  startingHealth: 7
+  startingHealth: 3
   iFramesDuration: 1
   numberOfFlashes: 1
   hitSound: {fileID: 8300000, guid: 235748a8303a08741b8656ae80caf988, type: 3}
